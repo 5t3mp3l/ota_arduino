@@ -1,0 +1,12 @@
+# Ignoriere Python-Caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Home Assistant-Konfigurationsdateien
+*.log
+secrets.yaml
+
+# IDE-spezifische Dateien
+.vscode/
+.idea/
