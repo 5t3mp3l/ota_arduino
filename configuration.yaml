@@ -1,0 +1,8 @@
+panel_custom:
+  - name: ota_arduino
+    sidebar_title: "OTA Arduino"
+    sidebar_icon: "mdi:chip"
+    js_url: /local/ota_arduino_panel.js
+    html_url: /local/ota_arduino_panel.html
+    embed_iframe: true
+    require_admin: true

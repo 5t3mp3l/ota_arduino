@@ -1,0 +1,9 @@
+{
+  "ota_arduino": {
+    "title": "OTA Arduino",
+    "create_project": "Create Project",
+    "description": "Manage your OTA uploads and Arduino configurations.",
+    "compile": "Compile Sketch",
+    "upload": "Upload Firmware"
+  }
+}

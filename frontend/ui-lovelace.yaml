@@ -1,0 +1,21 @@
+type: vertical-stack
+cards:
+  - type: entities
+    entities:
+      - entity: input_text.firmware_file  # File input for Arduino Sketch
+      - entity: input_text.upload_port    # Port or IP address for uploading
+  - type: button
+    name: Compile Sketch
+    tap_action:
+      action: call-service
+      service: ota_arduino.compile_sketch
+      service_data:
+        sketch_path: "/config/sketches/your_project.ino"
+  - type: button
+    name: Upload Firmware
+    tap_action:
+      action: call-service
+      service: ota_arduino.upload_firmware
+      service_data:
+        sketch_path: "/config/sketches/your_project.ino"
+        upload_port: "/dev/ttyUSB0"  # Example port

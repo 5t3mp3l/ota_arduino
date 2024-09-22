@@ -1,0 +1,16 @@
+ota_arduino.upload_firmware:
+  description: "Upload a firmware file via OTA"
+  fields:
+    firmware_file:
+      description: "The path to the firmware file"
+      example: "/config/ota_arduino/firmware.bin"
+
+ota_arduino.compile_firmware:
+  description: "Compile an Arduino sketch"
+  fields:
+    sketch_file:
+      description: "The path to the Arduino sketch"
+      example: "/config/ota_arduino/sketch.ino"
+
+ota_arduino.stream_logs:
+  description: "Stream logs during OTA or compilation"

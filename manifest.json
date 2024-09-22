@@ -1,0 +1,14 @@
+{
+    "domain": "ota_arduino",
+    "name": "OTA Arduino",
+    "version": "1.0",
+    "documentation": "https://github.com/5t3mp3l/ota-arduino",
+    "requirements": ["arduino-cli>=0.32"],
+    "dependencies": [],
+    "codeowners": ["ST3mp3l"],
+    "config_flow": true,
+    "panel_custom": true
+  }
+
+
+  

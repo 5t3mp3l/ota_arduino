@@ -1,0 +1,8 @@
+{
+    "title": "OTA Arduino",
+    "upload_firmware": "Upload Firmware",
+    "compile_firmware": "Compile Firmware",
+    "stream_logs": "Stream Logs",
+    "description": "Compile and upload Arduino firmware via OTA."
+  }
+  
