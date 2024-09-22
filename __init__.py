@@ -13,7 +13,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
     
     # Set up custom services
     await setup_services(hass)
-
+    hass.states.async_set("ota_arduino.status", "Integration loaded")
     # Setup the API routes for handling OTA, compilation, logs
     setup_api_routes(hass)
 
@@ -28,5 +28,6 @@ async def setup_services(hass: HomeAssistant):
 
 async def async_setup(hass, config):
     """Set up the OTA Arduino component."""
+    hass.states.async_set("ota_arduino.status", "Integration loaded")
     hass.services.async_register('ota_arduino', 'upload_firmware', handle_upload_firmware)
     return True
