@@ -6,3 +6,5 @@ panel_custom:
     html_url: /local/ota_arduino_panel.html
     embed_iframe: true
     require_admin: true
+    config:
+      title: "OTA Arduino Management"
