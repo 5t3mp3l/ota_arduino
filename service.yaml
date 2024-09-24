@@ -1,16 +1,18 @@
-ota_arduino.upload_firmware:
-  description: "Upload a firmware file via OTA"
+upload_firmware:
+  service_name: upload_firmware
+  description: "Uploads firmware to the target Arduino device."
   fields:
     firmware_file:
-      description: "The path to the firmware file"
-      example: "/config/ota_arduino/firmware.bin"
-
-ota_arduino.compile_firmware:
-  description: "Compile an Arduino sketch"
+      description: "The path to the firmware file to be uploaded."
+      example: "/config/firmware.bin"
+    device:
+      description: "The target device for firmware upload (e.g., /dev/ttyUSB0)."
+      example: "/dev/ttyUSB0"
+    
+compile_firmware:
+  service_name: compile_firmware
+  description: "Compiles an Arduino sketch using Arduino CLI."
   fields:
     sketch_file:
-      description: "The path to the Arduino sketch"
-      example: "/config/ota_arduino/sketch.ino"
-
-ota_arduino.stream_logs:
-  description: "Stream logs during OTA or compilation"
+      description: "The path to the Arduino sketch file to be compiled."
+      example: "/config/sketches/project.ino"
