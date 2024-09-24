@@ -1,0 +1,7 @@
+{
+  "title": "OTA Arduino",
+  "upload_firmware": "Firmware hochladen",
+  "compile_firmware": "Firmware kompilieren",
+  "stream_logs": "Protokolle anzeigen",
+  "description": "Kompilieren und Hochladen von Arduino-Firmware über OTA."
+}
